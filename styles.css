@@ -18,13 +18,17 @@ header,
 footer {
     background-color: #3672aa;
     padding: 1em;
+    border-radius: 15px;
+}
 
+header {
 }
 
 h1 {
     font-weight: bold;
     text-align: center;
     font-family: 'Cinzel', "Old+Standard+TT", sans-serif;
+    margin: 0;
 }
 
 #tomdaw {
@@ -32,7 +36,8 @@ h1 {
     width: 20%;
     height: auto;
     box-shadow: 5px 5px 2px 1px black;
-
+    position: relative;
+    top: -40px;
 }
 
 hr {
