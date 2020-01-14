@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Cinzel|Josefin+Sans|Old+Standard+TT&display=swap');
+
+body {
+    max-width: 850px;
+    height: auto;
+    margin: 0 auto;
+    background-color: seashell;
+    padding: 40px;
+}
+
+header,
+main,
+footer {
+    justify-content: center;
+}
+
+header,
+footer {
+    background-color: #3672aa;
+    padding: 1em;
+
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Cinzel', "Old+Standard+TT", sans-serif;
+}
+
+#tomdaw {
+    float: right;
+    width: 20%;
+    height: auto;
+    box-shadow: 5px 5px 2px 1px black;
+
+}
+
+hr {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 3px;
+}
+
+#byulink {
+    color: black;
+}
