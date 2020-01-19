@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Gayathri|Libre+Franklin|Noto+Sans+JP|Shadows+Into+Light&display=swap');
+
+body {
+    background-color: seashell;
+}
+
+header,
+footer {
+    background-color: #3672aa;
+    padding: 1em;
+    border-radius: 15px;
+    width: 100%;
+}
+
+header,
+footer {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h2 {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+p {
+    text-indent: 20px;
+    font-family: 'Gayathri', sans-serif;
+}
+
+/* iPhoneX views */
+main , header , footer {
+	max-width: 767px;
+    margin: 0 auto;
+    flex-flow: row wrap;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+    font-size: 0.8rem;
+}
+
+main section {
+	margin: 0.5rem;
+	border: 1.5px solid black;
+	padding: 0 1rem;
+	background-color: seashell;
+}
+
+/* iPad Views */
+@media only screen and (min-width: 37.5em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	section:nth-child(2) {
+		display: block;
+	}
+
+	section:nth-child(3) {
+		grid-column: span 2;
+	}
+
+	main picture {
+		display: block;
+	}
+	header footer main section {
+		width: 100%;
+		height: auto;
+        border: 1px solid darkgray;
+        flex-flow: row wrap;
+	}
+}
+
+/* Laptop with Touch Views */
+@media only screen and (min-width: 60em) {
+	main {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 5px;
+        margin: 5px;
+	}
+
+	section:nth-child(3) {
+		grid-column: span 1;
+    }
+    
+    main section {
+        margin: 0.5rem;
+        border: 2px solid black;
+        padding: 0 1rem;
+        max-width: 375px;
+        flex-flow: row wrap;
+    }
+}
