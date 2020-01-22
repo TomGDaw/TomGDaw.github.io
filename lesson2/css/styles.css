@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Gayathri|Libre+Franklin|Noto+Sans+JP|Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gayathri%7cLibre+Franklin%7cNoto+Sans+JP%7cShadows+Into+Light&display=swap');
 
 body {
     background-color: seashell;
@@ -51,6 +51,11 @@ main section {
 	background-color: seashell;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 /* iPad Views */
 @media only screen and (min-width: 37.5em) {
 	main {
@@ -81,7 +86,7 @@ main section {
 	main {
         grid-template-columns: 1fr 1fr 1fr;
         padding: 5px;
-        margin: 5px;
+        margin: auto;
 	}
 
 	section:nth-child(3) {
