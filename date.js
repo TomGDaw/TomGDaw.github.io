@@ -14,7 +14,7 @@ try {
         minute: "numeric",
         second: "numeric"
     };
-    document.getElementById("lastUpdated").textContent = new Date().toLocaleDateString("en-US", options);
+    document.getElementById("lastUpdated").textContent = new Date(document.lastModified).toLocaleDateString("en-US", options);
 } catch (e) {
     alert('Error with code or your browser does not support Locale')
 }

@@ -39,7 +39,6 @@ p {
   
   nav {
       background-color: #919191;
-      position: relative;
   }
   
   nav a {
@@ -64,10 +63,18 @@ p {
   
   }
 
+  ul {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      display: flex;
+      flex-direction: column;
+  }
+
 /* iPhoneX views */
 main,
 header,
-footer
+footer,
+nav
     {
     max-width: 767px;
     margin: 0 auto;
@@ -111,6 +118,10 @@ main section {
         border: 1px solid darkgray;
         flex-flow: row wrap;
     }
+
+    ul {
+        flex-direction: row;
+    }
 }
 
 /* Laptop with Touch Views */
@@ -118,7 +129,6 @@ main section {
     main {
         grid-template-columns: 1fr 1fr 1fr;
         padding: 5px;
-        margin: 5px;
     }
 
     section:nth-child(3) {
