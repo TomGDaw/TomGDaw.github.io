@@ -63,6 +63,7 @@ p {
       display: inline-block;
       padding: 1%;
       align-content: left;
+      text-align: center;
   }
   
   nav a:hover {
