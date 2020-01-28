@@ -154,6 +154,10 @@ main section {
     ul {
         flex-direction: row;
     }
+
+    ul li {
+        text-align: center;
+    }
 }
 
 /* Laptop with Touch Views */
