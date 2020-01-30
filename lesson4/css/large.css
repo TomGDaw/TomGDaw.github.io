@@ -1,0 +1,19 @@
+/* Laptop with Touch Views */
+@media only screen and (min-width: 60em) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+    }
+
+    section:nth-child(3) {
+        grid-column: span 1;
+    }
+
+    main section {
+        margin: 0.5rem;
+        border: 2px solid black;
+        padding: 0 1rem;
+        max-width: 375px;
+        flex-flow: row wrap;
+    }
+}
