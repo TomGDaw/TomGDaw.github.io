@@ -4,21 +4,38 @@ body {
     background-color: #eff4ff;
 }
 
-header,
 footer {
     background-color: #3672aa;
     padding: 1em;
     border-radius: 15px;
     width: 100%;
-}
-
-header,
-footer {
     text-align: left;
 }
 
-h1 {
+header {
+    background-color: #3672aa;
+    padding: 5px 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.epixweather {
     text-align: center;
+    width: auto;
+    height: auto;
+}
+
+picture {
+    width: 40%;
+    height: auto;
+}
+
+.epixweather , h2 {
+    font-size: 14px;
+}
+
+h1 {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -26,6 +43,7 @@ h2 {
     font-family: 'Libre Franklin', sans-serif;
     text-align: center;
 }
+
 .site-purpose {
     width: auto;
     height: auto;
@@ -33,6 +51,7 @@ h2 {
     border-radius: 4px;
     box-shadow: 5px 5px 5px black;
 }
+
 p {
     font-family: 'Gayathri', sans-serif;
     text-align: center;
@@ -44,69 +63,52 @@ p {
     border: 2px black solid;
     border-radius: 4px;
     box-shadow: 5px 5px 5px black;
-  }
-  
-  nav {
-      background-color: #919191;
-  }
-  
-  nav a {
-      color: #090a0a;
-      text-decoration: none;
-      line-height: 1em;
-      display: block;
-  }
-  
-  nav li {
-      list-style-type: none;
-      font-size: 1.3em;
-      display: inline-block;
-      padding: 1%;
-      text-align: center;
-  }
-  
-  nav a:hover {
-      background-color: #734b5e;
-      color: #f5d3ee;
-      border-radius: 2%;
-  
-  }
+    background-color: #eff4ff;
+}
 
-  ul {
-      margin-top: 0px;
-      margin-bottom: 0px;
-      display: flex;
-      flex-direction: column;
-  }
+nav {
+    background-color: #919191;
+}
 
-  div {
-    width: 100%;
-    height: 100%;
-  }
+nav a {
+    color: #090a0a;
+    text-decoration: none;
+    line-height: 1em;
+    display: block;
+}
 
-  #backgroundcolor {
-      background-color: #eff4ff;
-  }
+nav li {
+    list-style-type: none;
+    font-size: 1.3em;
+    display: inline-block;
+    padding: 1%;
+    text-align: center;
+}
 
-  #headerfooter {
-      background-color: #3672aa;
-  }
+ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+}
 
-  #navbar {
-      background-color: #919191;
-  }
-
-  #hoverover {
-      background-color: #734b5e;
-      color: #f5d3ee;
-  }
+.contentbox {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #2274A5;
+    padding: 15px;
+    background-color: #E8F1F2;
+    color: #464655;
+    font-style: italic;
+    width: 60%;
+    height: auto;
+}
 
 /* iPhoneX views */
 main,
 header,
 footer,
-nav
-    {
+nav {
     max-width: 767px;
     margin: 0 auto;
     flex-flow: row wrap;
