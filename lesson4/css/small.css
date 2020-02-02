@@ -2,37 +2,30 @@
 
 body {
     background-color: #eff4ff;
-}
-
-footer {
-    background-color: #3672aa;
-    padding: 1em;
-    border-radius: 15px;
-    width: 100%;
-    text-align: left;
+    padding: 0;
+    margin: 0;
 }
 
 header {
     background-color: #3672aa;
     padding: 5px 0;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 10px;
+    height: auto;
+    border: 2px black solid;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px black;
+    background-color: #eff4ff;
 }
 
 .epixweather {
-    text-align: center;
-    width: auto;
-    height: auto;
-}
-
-picture {
-    width: 40%;
-    height: auto;
-}
-
-.epixweather , h2 {
-    font-size: 14px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -44,30 +37,24 @@ h2 {
     text-align: center;
 }
 
-.site-purpose {
-    width: auto;
-    height: auto;
-    border: 2px black solid;
-    border-radius: 4px;
-    box-shadow: 5px 5px 5px black;
-}
-
 p {
     font-family: 'Gayathri', sans-serif;
     text-align: center;
 }
 
-#weather {
-    width: 100%;
-    height: auto;
-    border: 2px black solid;
-    border-radius: 4px;
-    box-shadow: 5px 5px 5px black;
-    background-color: #eff4ff;
-}
-
 nav {
     background-color: #919191;
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
 }
 
 nav a {
@@ -104,6 +91,17 @@ ul {
     height: auto;
 }
 
+footer {
+    background-color: #3672aa;
+    padding: 1em;
+    border-radius: 15px;
+    width: 100%;
+    text-align: left;
+}
+
+.navigation {
+
+}
 /* iPhoneX views */
 main,
 header,
@@ -126,4 +124,27 @@ main section {
     border: 1.5px solid black;
     padding: 0 1rem;
     background-color: seashell;
+}
+
+header img {
+    width: 100%;
+}
+
+.responsive li {
+	display: block;
+}
+
+.navigation {
+    display: flex;
+}
+.navigation li {
+    display: block; /* needed because of state in small view */
+    flex: 1 1 100%;
+}
+.navigation li a {
+    text-align: center;
+}
+
+.navigation li:first-child {
+    display: none;
 }
