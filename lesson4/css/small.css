@@ -15,7 +15,7 @@ header {
 }
 
 header img {
-    width: 10px;
+    width: 80px;
     height: auto;
     border: 2px black solid;
     border-radius: 4px;
@@ -26,6 +26,7 @@ header img {
 .epixweather {
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
 }
 
 h1 {
@@ -93,9 +94,9 @@ ul {
 
 footer {
     background-color: #3672aa;
-    padding: 1em;
-    border-radius: 15px;
-    width: 100%;
+    padding: 5px 20px;
+    width: 850px;
+    height: auto;
     text-align: left;
 }
 
@@ -103,11 +104,11 @@ footer {
 
 }
 /* iPhoneX views */
-main,
 header,
-footer,
-nav {
-    max-width: 767px;
+nav,
+main,
+footer {
+    max-width: 100%;
     margin: 0 auto;
     flex-flow: row wrap;
 }
@@ -124,10 +125,6 @@ main section {
     border: 1.5px solid black;
     padding: 0 1rem;
     background-color: seashell;
-}
-
-header img {
-    width: 100%;
 }
 
 .responsive li {
