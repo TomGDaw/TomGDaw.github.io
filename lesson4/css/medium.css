@@ -31,4 +31,12 @@
         text-align: center;
     }
 
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
 }

@@ -30,7 +30,7 @@ header img {
 }
 
 h1 {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 h2 {
@@ -63,32 +63,35 @@ nav a {
     text-decoration: none;
     line-height: 1em;
     display: block;
+    padding: 1%;
 }
 
 nav li {
     list-style-type: none;
     font-size: 1.3em;
     display: inline-block;
-    padding: 1%;
     text-align: center;
 }
 
 ul {
     margin-top: 0px;
     margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
+    max-width: 850px;
 }
 
 .contentbox {
     display: block;
-    margin: 10px auto;
+    margin: 15px auto;
     border: 1px dashed #2274A5;
     padding: 15px;
     background-color: #E8F1F2;
     color: #464655;
     font-style: italic;
-    width: 60%;
+    max-width: 850px;
     height: auto;
 }
 
@@ -97,12 +100,12 @@ footer {
     padding: 5px 20px;
     width: 850px;
     height: auto;
-    text-align: left;
+    text-align: center;
 }
 
-.navigation {
-
-}
+.navigation a:hover {
+    background-color: aquamarine;
+} 
 /* iPhoneX views */
 header,
 nav,
@@ -135,13 +138,13 @@ main section {
     display: flex;
 }
 .navigation li {
-    display: block; /* needed because of state in small view */
+    display: none; /* needed because of state in small view */
     flex: 1 1 100%;
 }
 .navigation li a {
     text-align: center;
 }
 
-.navigation li:first-child {
-    display: none;
+.responsive li {
+    display: block;
 }
