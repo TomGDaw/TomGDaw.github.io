@@ -87,11 +87,13 @@ ul {
     display: block;
     margin: 15px auto;
     border: 1px dashed #2274A5;
-    padding: 15px;
     background-color: #E8F1F2;
     color: #464655;
     font-style: italic;
     max-width: 850px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     height: auto;
 }
 
