@@ -12,8 +12,8 @@
     <LINK href="css/large.css" rel="stylesheet" type="text/css">
 </head>
 
-<body onload="currentDate()">
-    <div>
+<body>
+    <div id="pancake">
         <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
     </div>
 
@@ -34,7 +34,7 @@
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="preston-5.html">Home</a></li>
-            <li><a href="preston-5.html">Preston</a></li>
+            <li><a id="active" href="preston-5.html">Preston</a></li>
             <li><a href="preston-5.html">Soda Springs</a></li>
             <li><a href="preston-5.html">Fish Haven</a></li>
             <li><a href="preston-5.html">Storm Center</a></li>
@@ -120,11 +120,9 @@
         <div class="contact">
             <img class="map" src="images/preston_map.jpg" alt="Map of Preston">
             <section class="contact-info">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum."</p>
+                <p>Email <a>epixweather@epixweather.com</a></p>
+                <p>Phone <a>208-222-2222</a></p>
+                <p>Address <a>59 South 2nd East St, Preston Idaho</a></p>
             </section>
             
         </div>
@@ -137,6 +135,7 @@
         <br /> Last Updated: <span id="lastUpdated"></span>
         <script src="js/date.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/pancake.js"></script>
     </footer>
 
 </body>

@@ -147,17 +147,22 @@ footer {
 
 .contact {
     position: relative;
-    align-items: left;
     margin: 10px auto;
     display: grid;
 }
 
-
-.navigation a:hover , active {
+.navigation a:hover {
     background-color: #734b5e;
     text-decoration: underline;
     font-size: 22px;
 } 
+
+#active {
+    background-color: #734b5e;
+    text-decoration: underline;
+    font-size: 22px;
+}
+
 /* iPhoneX views */
 header,
 nav,
@@ -211,4 +216,8 @@ main section {
 
 .article img {
     max-width: 531px;
+}
+
+#pancake {
+    display: none;
 }
