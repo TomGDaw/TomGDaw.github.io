@@ -93,7 +93,6 @@ footer {
 
 .hero {
     position: relative;
-    align-items: center;
     margin: 15px auto;
     border: 1px dashed #2274A5;
     color: #464655;
@@ -103,49 +102,61 @@ footer {
     display: block;
     max-width: 850px;
     width: 100%;
-    height: 300px;
+    height: 200px;
 }
 
 .weather-summary {
     position: absolute;
-    width: 20%;
-    height: 70%;
-	top: 10px;
-	left: 20px;
-    background-color:rgba(34,116,165,0.7);
-    text-decoration-color: #000;
+	top: 1rem;
+    left: 1rem;
+    height: 200px;
+    background-color:rgba(34, 116, 165, 0.9);
+    text-decoration-color: black;
 	border: 1px solid #000;
-	padding: 1.5rem;
-	box-shadow: 0 0 30px #111;
-	opacity: .8;
+	padding: 10px 15px 10px 15px;
+    box-shadow: 0 0 2px #111;
+    display: block;
 } 
 
-.forcast {
-    position: relative;
-    align-items: center;
-    margin: 15px auto;
-    border: 1px dashed #2274A5;
-    color: #464655;
+.sum-left {
+    position: absolute;
+    top: 65px;
+    left: 30px;
+}
+
+.sum-right {
+    position: absolute;
+    top: 65px;
+    right: 50px;
 }
 
 .article {
     position: relative;
     align-items: center;
     margin: 15px auto;
-    border: 1px dashed #2274A5;
-    color: #464655;
+    border:10px thick black;
+    max-width: 850px;
+    background-color: #2274A5;
+    color: white;
+}
+
+.article p {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .contact {
     position: relative;
-    align-items: center;
-    margin: 15px auto;
-    border: 1px dashed #2274A5;
-    color: #464655;
+    align-items: left;
+    margin: 10px auto;
+    display: grid;
 }
 
-.navigation a:hover {
-    background-color: aquamarine;
+
+.navigation a:hover , active {
+    background-color: #734b5e;
+    text-decoration: underline;
+    font-size: 22px;
 } 
 /* iPhoneX views */
 header,
@@ -190,6 +201,14 @@ main section {
     display: block;
 }
 
-.forcast {
+.forecast {
     display: none;
+}
+
+.map {
+    display: none;
+}
+
+.article img {
+    max-width: 531px;
 }
