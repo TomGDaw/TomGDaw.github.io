@@ -94,4 +94,14 @@
         margin-top: 5px;
         margin-bottom: 15px;
     }
+
+    .weather-summary {
+        height: 200px;
+    }
+
+    .weather-summary p {
+        margin: 12px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
