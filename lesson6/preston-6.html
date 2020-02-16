@@ -45,7 +45,12 @@
     <main>
         <h2>Preston Idaho</h2>
         <div class="hero">
-            <img class="heroimg" src="images/hero.jpg" alt="Preston Hero/image of clouds">
+            <picture class="heroimg">
+                <img src="images/Large.jpg" alt="Preston Hero/image of clouds" sizes="50vw"
+                    srcset="images/small.jpg 200vw,
+                            images/medium.jpg 400vw,
+                            images/Large.jpg 80vw">
+            </picture>
             <section class="weather-summary">
                 <h2>Weather Summary</h2>
                 <hr>
@@ -60,7 +65,7 @@
                     <p><span id="temp">24</span> F</p>
                     <p><span id="high">30</span> F</p>
                     <p><span id="windChill">12</span> F</p>
-                    <p><span id= humidity>20</span>%</p>
+                    <p><span id=humidity>20</span>%</p>
                     <p><span id="windSpeed">2</span>mph</p>
                 </div>
             </section>
@@ -141,4 +146,12 @@
     <script src="js/date.js"></script>
     <script src="js/script.js"></script>
     <script src="js/pancake.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Acme']
+            }
+        });
+    </script>
 </body>

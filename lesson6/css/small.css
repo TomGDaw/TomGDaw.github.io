@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300%7cPT+Sans%7cSigmar+One&display=swap');
+
 
 body {
     background-color: #eff4ff;
@@ -30,7 +30,7 @@ header img {
 }
 
 h1 {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Acme', sans-serif;
 }
 
 h2 {
