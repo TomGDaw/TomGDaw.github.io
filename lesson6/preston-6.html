@@ -45,11 +45,11 @@
     <main>
         <h2>Preston Idaho</h2>
         <div class="hero">
-            <picture class="heroimg">
-                <img src="images/Large.jpg" alt="Preston Hero/image of clouds" sizes="50vw"
-                    srcset="images/small.jpg 200vw,
-                            images/medium.jpg 400vw,
-                            images/Large.jpg 80vw">
+            <picture id="heroimg">
+                <source media="(min-width: 851px)" srcset="images/large.jpg">
+                <source media="(min-width: 376px) and (max-width: 850px)" srcset="images/medium.jpg">
+                <source media="(max-width: 375px)" srcset="images/small.jpg">
+                <img src="images/small.jpg" alt="the small picture">
             </picture>
             <section class="weather-summary">
                 <h2>Weather Summary</h2>
@@ -147,11 +147,5 @@
     <script src="js/script.js"></script>
     <script src="js/pancake.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-        WebFont.load({
-            google: {
-                families: ['Acme']
-            }
-        });
-    </script>
+    <script src="js/webfont.js"></script>
 </body>
