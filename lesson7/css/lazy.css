@@ -1,0 +1,26 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+img {
+    margin: auto;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
