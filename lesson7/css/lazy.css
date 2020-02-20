@@ -1,6 +1,11 @@
 main {
     display: grid;
     grid-template-columns: 1fr;
+    background-color: bisque;
+}
+
+body {
+    background-color: aqua;
 }
 
 img {
