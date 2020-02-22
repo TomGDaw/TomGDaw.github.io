@@ -106,7 +106,6 @@ nav,
 main,
 footer {
     max-width: 100%;
-    max-height: auto;
     margin: 0 auto;
     flex-flow: column;
 }
