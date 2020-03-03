@@ -113,6 +113,7 @@ footer {
 main {
     font-size: 0.8rem;
     background-color: seashell;
+    max-width: 850px;
 }
 
 .responsive li {
@@ -132,4 +133,80 @@ main {
 
 .responsive li {
     display: block;
+}
+
+/* CSS for Strom Center */
+
+form fieldset {
+    margin: auto;
+    border-radius: 10px;
+    margin: 1rem 1rem;
+    border: solid 1px black;
+    background-color: white;
+}
+
+fieldset legend {
+    color: black;
+}
+
+form label {
+    margin: 0 1rem 0 0;
+}
+
+.option {
+    display: block;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+form label.option input, textarea, form select {
+    display: block;
+    border: solid 1px black;
+    border-radius: 4px;
+    margin: 0 0 0 0.2rem;
+    padding: .75rem;
+    font-size: 0.9rem;
+    padding: 0.6rem;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form label.rad {
+    display: block;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+.flexly {
+    border: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    margin-right: 0;
+    margin-bottom: 0;
+    
+}
+
+label.flexly {
+    display: block;
+}
+
+#ratingvalue {
+	margin: 0 0.2rem;
+}
+
+#ratingvalue:hover {
+    box-shadow: none;
+}
+
+#reportBtn {
+    border: none;
+    margin: 1.25rem 1rem 1.5rem 1rem;
+    background-color: #734b5e;
+    padding: 0.75rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
 }

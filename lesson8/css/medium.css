@@ -23,4 +23,14 @@
     .navigation li {
         display: block;
     }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    
+    .gallery h2 {
+        grid-column: span 2;
+    }
 }
