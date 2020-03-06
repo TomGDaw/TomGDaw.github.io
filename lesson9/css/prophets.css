@@ -1,0 +1,67 @@
+h1, h2, p, footer {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Sigmar One', serif;
+    color:#200000;
+}
+main {
+    background-color: rgba(146, 189, 163, 0.4);
+}
+
+h2 {
+    font-family: 'Sigmar One', serif;
+    color: #200000;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+main div.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 0.5rem;
+    box-shadow: 0 0 25px gray;
+}
+
+div section {
+    padding: 1em;
+    border: 1px solid #36453B;
+    border-radius: 5px;
+    background-color: #92BDA3;
+}
+
+section p {
+    margin: 0;
+    padding: 0;
+}
+
+section img {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    max-width: 60%;
+    box-shadow: 0 0 15px #200000;
+}
+
+footer {
+    margin: 0.75rem;
+}
+
+@media screen and (min-width: 32.5em) {
+    main div.cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (min-width: 60em) {
+    main div.cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}

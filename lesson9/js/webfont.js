@@ -1,5 +1,5 @@
 WebFont.load({
     google: {
-        families: ['Ubuntu']
+        families: ['Lato', 'Sigmar One']
     }
 });
