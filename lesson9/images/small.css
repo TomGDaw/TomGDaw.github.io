@@ -136,7 +136,7 @@ main {
 
 img {
     height: 300px;
-    width: 90%;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     border-style: outset;
@@ -155,11 +155,4 @@ main {
 
 .weatherPic:hover {
     box-shadow: 0 0 20px darkblue;
-}
-
-.gallery {
-    background-color: antiquewhite;
-    margin: 20px;
-    align-content: center;
-    justify-content: center;
 }

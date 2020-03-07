@@ -24,13 +24,8 @@
         display: block;
     }
 
-    .gallery {
+    main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        
-    }
-    
-    .gallery h2 {
-        grid-column: span 2;
+        grid-template-columns: 1fr;
     }
 }
