@@ -47,10 +47,5 @@ fetch(requestURL)
 
         document.querySelector('div.townInfo').appendChild(card);
       }
-      else {
-        continue;
-      }
-
-
     }
   });

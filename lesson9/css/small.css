@@ -145,21 +145,10 @@ img {
     justify-content: center; 
 }
 
-main {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    font-size: 0.8rem;
-    background-color: seashell;
-}
-
-.weatherPic:hover {
-    box-shadow: 0 0 20px darkblue;
-}
-
-.gallery {
-    background-color: antiquewhite;
-    margin: 20px;
-    align-content: center;
+.townInfo {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     justify-content: center;
+    align-items: center;
 }
