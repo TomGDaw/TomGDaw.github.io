@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Preston-10</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/phpThumb_generated_thumbnailico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <LINK href="css/small.css" rel="stylesheet" type="text/css">
+    <LINK href="css/medium.css" rel="stylesheet" type="text/css">
+    <LINK href="css/large.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="pancake">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+
+    <header>
+        <picture>
+            <img class="logo" src="images/weather.png" alt="The weather logo">
+        </picture>
+
+        <section class="epixweather">
+            <h1>EpixWeather.com</h1>
+            <div class="moto">Weather Elevated</div>
+        </section>
+
+
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="/lesson9/index.html">Home</a></li>
+            <li><a id="active" href="lesson10/preston-10.html">Preston</a></li>
+            <li><a href="preston-5.html">Soda Springs</a></li>
+            <li><a href="preston-5.html">Fish Haven</a></li>
+            <li><a href="/lesson8/stromcenter.html">Storm Center</a></li>
+            <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="hero">
+            <picture id="heroimg">
+                <source media="(min-width: 851px)" srcset="images/Large.jpg">
+                <source media="(min-width: 376px) and (max-width: 850px)" srcset="images/medium.jpg">
+                <source media="(max-width: 375px)" srcset="images/small.jpg">
+                <img src="images/small.jpg" alt="the small picture">
+            </picture>
+            <section class="weather-summary">
+                <h2>Weather Summary</h2>
+                <hr>
+                <div class="sum-left">
+                    <p>Currently: </p>
+                    <p>High: </p>
+                    <p>Wind Chill: </p>
+                    <p>Hummidity: </p>
+                    <p>Wind Speed: </p>
+                </div>
+                <div class="sum-right">
+                    <p><span id="temp">24</span> F</p>
+                    <p><span id="high">30</span> F</p>
+                    <p><span id="windChill">12</span> F</p>
+                    <p><span id=humidity>20</span>%</p>
+                    <p><span id="windSpeed">2</span>mph</p>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="forecast">
+            <h2>5 Day Forecast</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="last-row">
+                        <td>28&#176;F</td>
+                        <td>28&#176;F</td>
+                        <td>39&#176;F</td>
+                        <td>42&#176;F</td>
+                        <td>37&#176;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="article">
+            <h2>An Article of Weather</h2>
+            <img src="images/photo-of-green-field-near-mountains-974314.jpg" alt="picture of farm land">
+            <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+                and I will give you a complete account of the system, and expound the actual teachings of the great
+                explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids
+                pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure
+                rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or
+                pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances
+                occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us
+                ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any
+                right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one
+                who avoids a pain that produces no resultant pleasure?"</p>
+            <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+                demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the
+                pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty
+                through weakness of will, which is the same as saying through shrinking from toil and pain. These cases
+                are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled
+                and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and
+                every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of
+                business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise
+                man therefore always holds in these matters to this principle of selection: he rejects pleasures to
+                secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+
+        </div>
+
+        <div class="contact">
+            <img class="map" src="images/preston_map.jpg" alt="Map of Preston">
+            <div class="contact-info">
+                <p>Email <a>epixweather@epixweather.com</a></p>
+                <p>Phone <a>208-222-2222</a></p>
+                <p>Address <a>59 South 2nd East St, Preston Idaho</a></p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        &copy; <span id="currentDate"></span> | Thomas Daw | Idaho | <a href="https://www.byui.edu/online"
+            id="byulink">BYUI
+            Online Learning</a>
+        <br /> Last Updated: <span id="lastUpdated"></span>
+
+    </footer>
+
+    <script src="js/windChill.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/pancake.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+</body>

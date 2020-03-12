@@ -5,14 +5,14 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject); // temporary checking for valid response and data parsing
+    console.table(jsonObject); 
     const towns = jsonObject['towns'];
     let rowNumber = 0;
-    for (let i = 0; i < towns.length; i++ ) {
-        if (towns[i].name == 'Preston' || towns[i].name == "Fish Haven" || towns[i].name == "Soda Springs") {
-        
+    for (let i = 0; i < towns.length; i++) {
+      if (towns[i].name == 'Preston' || towns[i].name == "Fish Haven" || towns[i].name == "Soda Springs") {
+
         rowNumber = rowNumber + 1;
-        
+
         let card = document.createElement('div');
         card.setAttribute('class', 'row' + rowNumber + ' townCard');
 
@@ -43,14 +43,14 @@ fetch(requestURL)
         image.setAttribute('src', 'images/' + towns[i].photo);
         image.setAttribute('alt', 'Town of ' + towns[i].name)
         card.appendChild(image);
-        
-        
-        document.querySelector('div.townInfo').appendChild(card); }
-        //document.querySelector('div.row' + [rowNumber]).appendChild(info);   }
 
-        else {
-            continue;
-        }
 
-        
-  }});
+        document.querySelector('div.townInfo').appendChild(card);
+      }
+      else {
+        continue;
+      }
+
+
+    }
+  });
