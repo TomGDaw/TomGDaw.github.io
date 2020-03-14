@@ -151,4 +151,10 @@ img {
     margin: auto;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.townCard {
+    display: flex;
+    flex-direction: column;
 }

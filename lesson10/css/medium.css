@@ -41,31 +41,38 @@
     }
 
     .forecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        max-width: 500px;
+        margin: auto;
+        margin-top: 1rem;
+        text-align: center;
+        border: 2px solid #919191;
+    }
+    
+    .forecast h3 {
+        grid-column: span 5;
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .forecast img {
         display: block;
-        align-items: center;
-        color: #464655;
-        text-align: center;
+        max-width: 60%;
+        margin: auto;
     }
-
-    th {
-        padding: 16px;
-        background-color: #2274A5;
+    
+    .days {
+        box-shadow: none;
+        margin: 0;
+        align-content: center;
+        background-color: #eff4ff;
     }
-
-    th {
-        display: table-cell;
-        vertical-align: inherit;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    table {
-        width: 100%;
-        max-width: 680px;
-        border-collapse: collapse;
-        border: 2px solid #000000;
-        margin: 0 auto;
-        text-align: center;
+    
+    .label {
+        background-color: #3672aa;
+        border: 1px solid #919191;
+        border-radius: 5px 5px 0 0;
     }
     .heroimg {
         height: 300px;
