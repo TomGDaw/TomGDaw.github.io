@@ -10,6 +10,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 header img {
@@ -112,8 +113,9 @@ footer {
 
 main {
     font-size: 0.8rem;
-    background-color: seashell;
+    background-color: #eff4ff;
     max-width: 850px;
+    align-content: center;
 }
 
 .responsive li {
@@ -209,4 +211,6 @@ label.flexly {
     border-radius: 5px;
     color: white;
     font-size: 1.5rem;
+    align-content: center;
+    justify-content: center;
 }

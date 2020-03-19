@@ -152,9 +152,12 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: auto;
+    width: 100%;
 }
 
 .townCard {
     display: flex;
     flex-direction: column;
+    margin: auto;
 }

@@ -91,7 +91,6 @@ footer {
 .hero {
     position: relative;
     margin: 15px auto;
-    border: 1px dashed #2274A5;
     color: #464655;
 }
 
@@ -121,12 +120,14 @@ footer {
     position: absolute;
     top: 65px;
     left: 30px;
+    line-height: 30px;
 }
 
 .sum-right {
     position: absolute;
     top: 65px;
     right: 50px;
+    line-height: 20px;
 }
 
 .article {
@@ -180,7 +181,6 @@ footer {
 
 main {
     font-size: 0.8rem;
-    background-color: seashell;
 }
 
 main section {
