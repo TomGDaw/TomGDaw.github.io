@@ -1,0 +1,36 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: bisque;
+}
+
+body {
+    background-color: aqua;
+}
+
+img {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-style: outset;
+    border-width: 3px;
+    border-color: beige;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }

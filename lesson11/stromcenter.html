@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Storm-Center</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/stormcenter/phpThumb_generated_thumbnailico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <LINK href="css/stormcenter/small.css" rel="stylesheet" type="text/css">
+    <LINK href="css/stormcenter/medium.css" rel="stylesheet" type="text/css">
+    <LINK href="css/stormcenter/large.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <picture>
+            <img class="logo" src="images/stormcenter/weather.png" alt="The weather logo">
+        </picture>
+
+        <section class="epixweather">
+            <h1>EpixWeather.com</h1>
+            <div class="moto">Weather Elevated</div>
+        </section>
+
+
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="preston-5.html">Soda Springs</a></li>
+            <li><a href="preston-5.html">Fish Haven</a></li>
+            <li><a id="active" href="stromcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Storm Center</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="option">Full Name* <input type="text" name="name" required pattern="[A-za-z].{4,}" title="Must be at least 5 characters"></label>
+                <label class="option">Email <input type="email" name="email" placeholder="someone@provider.com"></label>
+                <label class="option">Phone Number* <input type="tel" name="phone" required></label>
+                <label class="option">Zip Code* <input type="number" name="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Details</legend>
+                <label class="option">Storm Date <input type="date" name="stormDate"></label>
+                <label class="option">Storm Type <input list="storm-types" name="stormType"></label>
+                    <datalist id="storm-types">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                    <label class="top flexly">Storm Severity 
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                    </label>
+                    <label class="option">Storm Region 
+                        <select name="region">
+                            <option value="">Select Region</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodaSprings">Soda Springs</option>
+                            <option value="fishHaven">Fish Haven</option>
+                        </select>
+                    </label>
+            </fieldset>
+            <fieldset>
+                <legend>Danger Risk</legend>
+                    <div class="option">Are you in danger?
+                        <label class="rad"><input type="radio" name="danger" value="yes">&nbsp; Yes</label>
+                        <label class="rad"><input type="radio" name="danger" value="maybe">&nbsp; Maybe</label>
+                        <label class="rad"><input type="radio" name="danger" value="no">&nbsp; No</label>
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                    <label class="option">Type additional info and comments here
+                        <textarea name="comments" rows="5" cols="50"></textarea></label>
+            </fieldset>
+
+            <input id="reportBtn" type="submit" value="Report My Storm">
+        </form>
+    </main>
+
+    <footer>
+        &copy; <span id="currentDate"></span> | Thomas Daw | Idaho | <a href="https://www.byui.edu/online"
+            id="byulink">BYUI
+            Online Learning</a>
+        <br /> Last Updated: <span id="lastUpdated"></span>
+
+    </footer>
+    <script src="js/lazyloader.js"></script>
+    <script src="js/rating.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+</body>
