@@ -2,20 +2,17 @@
 <html lang="en">
 
 <head>
-    <title>Preston</title>
+    <title>Fish Haven</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/preston/phpThumb_generated_thumbnailico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <LINK href="css/preston/small.css" rel="stylesheet" type="text/css">
-    <LINK href="css/preston/medium.css" rel="stylesheet" type="text/css">
-    <LINK href="css/preston/large.css" rel="stylesheet" type="text/css">
+    <LINK href="css/fishhaven/small.css" rel="stylesheet" type="text/css">
+    <LINK href="css/fishhaven/medium.css" rel="stylesheet" type="text/css">
+    <LINK href="css/fishhaven/large.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div id="pancake">
-        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
-    </div>
 
     <header>
         <picture>
@@ -43,30 +40,25 @@
     </nav>
 
     <main>
-        <h2>Preston Idaho</h2>
+
+        <h2>Fish Haven Idaho</h2>
         <div class="hero">
             <picture id="heroimg">
-                <source media="(min-width: 851px)" srcset="images/preston/Large.jpg">
-                <source media="(min-width: 376px) and (max-width: 850px)" srcset="images/preston/medium.jpg">
-                <source media="(max-width: 375px)" srcset="images/preston/small.jpg">
-                <img src="images/preston/small.jpg" alt="the small picture">
+                <source media="(min-width: 851px)" srcset="images/fishhaven/Large.jpg">
+                <source media="(min-width: 376px) and (max-width: 850px)" srcset="images/fishhaven/medium.jpg">
+                <source media="(max-width: 375px)" srcset="images/fishhaven/small.jpg">
+                <img src="images/fishhaven/small.jpg" alt="the small picture">
             </picture>
             <section class="weather-summary">
                 <h2>Weather Summary</h2>
                 <hr>
-                <div class="sum-left">
-                    <div>Currently:&nbsp;&nbsp;</div>
-                    <div>Tempurature:&nbsp;&nbsp;</div>
-                    <div>Wind Chill:&nbsp;&nbsp;</div>
-                    <div>Humidity:&nbsp;&nbsp;</div>
-                    <div>Wind Speed:&nbsp;&nbsp;</div>
-                </div>
-                <div class="sum-right">
-                    <div><span id="condition"></span></div>
-                    <div><span id="temp"></span>&#8457;</div>
-                    <div><span id="windChill"></span>&#8457;</div>
-                    <p><span id=humidity>20</span>%</p>
-                    <p><span id="windSpeed">2</span>mph</p>
+                <div id="sum">
+                    <div><span>Currently:&nbsp;&nbsp;</span><span><img id="condition"></img></span></div>
+                    <div><span>Tempurature:&nbsp;&nbsp;</span><span><span id="temp"></span>&#8457;</span></div>
+                    <div><span>Wind Chill:&nbsp;&nbsp;</span><span><span id="windChill"></span>&#8457;</span></span>
+                    </div>
+                    <div><span>Humidity:&nbsp;&nbsp;</span><span><span id=humidity>20</span>%</span></div>
+                    <div><span>Wind Speed:&nbsp;&nbsp;</span><span><span id="windSpeed">2</span>mph</span></div>
                 </div>
             </section>
 
@@ -79,37 +71,36 @@
             <div class="days label" id="day3"></div>
             <div class="days label" id="day4"></div>
             <div class="days label" id="day5"></div>
-            <div class="days"><img id="icon1" ><span id="temp1"></span>&deg;F</div>
-            <div class="days"><img id="icon2" ><span id="temp2"></span>&deg;F</div>
-            <div class="days"><img id="icon3" ><span id="temp3"></span>&deg;F</div>
-            <div class="days"><img id="icon4" ><span id="temp4"></span>&deg;F</div>
-            <div class="days"><img id="icon5" ><span id="temp5"></span>&deg;F</div>
+            <div class="days"><img id="icon1"><span id="temp1"></span>&deg;F</div>
+            <div class="days"><img id="icon2"><span id="temp2"></span>&deg;F</div>
+            <div class="days"><img id="icon3"><span id="temp3"></span>&deg;F</div>
+            <div class="days"><img id="icon4"><span id="temp4"></span>&deg;F</div>
+            <div class="days"><img id="icon5"><span id="temp5"></span>&deg;F</div>
+        </div>
+
+        <div class="events">
+            <h2>Fish Haven Events</h2>
+            <hr>
         </div>
 
         <div class="article">
-            <h2>An Article of Weather</h2>
-            <img src="images/preston/photo-of-green-field-near-mountains-974314.jpg" alt="picture of farm land">
-            <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
-                and I will give you a complete account of the system, and expound the actual teachings of the great
-                explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids
-                pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure
-                rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or
-                pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances
-                occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us
-                ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any
-                right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one
-                who avoids a pain that produces no resultant pleasure?"</p>
-            <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
-                demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the
-                pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty
-                through weakness of will, which is the same as saying through shrinking from toil and pain. These cases
-                are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled
-                and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and
-                every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of
-                business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise
-                man therefore always holds in these matters to this principle of selection: he rejects pleasures to
-                secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
-
+            <h2>Letter | Wolf numbers must be kept in check</h2>
+            <img src="images/fishhaven/lakeclouds.jpg" alt="picture of farm land">
+            <p>In response to Bill Aney's recent column, Idaho bear and cat numbers are kept in balance by sportsmen.
+                Goals are set by the Fish & Game department, maintaining balanced populations of both. Wolves, however,
+                are another matter..</p>
+            <p>Man has brought about extinction of species, but you fail to acknowledge that managed sport hunting has
+                never done so. In fact, sportsmen are the biggest benefactors of wildlife.</p>
+            <p>Unlike you, I have killed wolves, both hunting and trapping, and will continue to do so, not because they
+                kill to survive but because they kill in excess. Every wolf study ever done has confirmed that wolves
+                like to kill just for the bloodlust thrill of it. Science refers to this as "sport killing." I've
+                witnessed too much of this and it is disgusting.</p>
+            <p>I contribute to wildlife and have as much right to hunt elk as do wolves, and I'm not willing to forfeit
+                that right. I want my heirs to be able to go to our cabin on "the joe" and continue that tradition for
+                many years.</p>
+            <p>Read the full article <a
+                    href="https://www.eastoregonian.com/opinion/letters/letter-wolf-numbers-must-be-kept-in-check/article_e70bc0a6-67e8-11ea-b37f-5b7e32b7ae74.html">
+                    Letter | Wolf numbers must be kept in check</a></p>
         </div>
 
         <div class="contact">
@@ -130,13 +121,14 @@
         <br /> Last Updated: <span id="lastUpdated"></span>
 
     </footer>
-
     <script src="js/windChill.js"></script>
     <script src="js/date.js"></script>
     <script src="js/script.js"></script>
     <script src="js/pancake.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfont.js"></script>
-    <script src="js/fishwebapi.js"></script>
-    <script src="js/fishfiveDayForecast.js"></script>
+    <script src="js/webapiFish.js"></script>
+    <script src="js/fiveDayForecastFish.js"></script>
+    <script src="js/eventsFish.js"></script>
+
 </body>

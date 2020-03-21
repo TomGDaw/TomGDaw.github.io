@@ -13,12 +13,12 @@
 </head>
 
 <body>
-    
+
     <div id="pancake">
         <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
     </div>
 
-    
+
     <header>
         <picture>
             <img class="logo" src="images/preston/weather.png" alt="The weather logo">
@@ -45,7 +45,7 @@
     </nav>
 
     <main>
-        
+
         <h2>Preston Idaho</h2>
         <div class="hero">
             <picture id="heroimg">
@@ -57,10 +57,11 @@
             <section class="weather-summary">
                 <h2>Weather Summary</h2>
                 <hr>
-                <div class="sum">
-                    <div><span>Currently:&nbsp;&nbsp;</span><span><span id="condition"></span></span></div>
+                <div id="sum">
+                    <div><span>Currently:&nbsp;&nbsp;</span><span><img id="condition"></img></span></div>
                     <div><span>Tempurature:&nbsp;&nbsp;</span><span><span id="temp"></span>&#8457;</span></div>
-                    <div><span>Wind Chill:&nbsp;&nbsp;</span><span><span id="windChill"></span>&#8457;</span></span></div>
+                    <div><span>Wind Chill:&nbsp;&nbsp;</span><span><span id="windChill"></span>&#8457;</span></span>
+                    </div>
                     <div><span>Humidity:&nbsp;&nbsp;</span><span><span id=humidity>20</span>%</span></div>
                     <div><span>Wind Speed:&nbsp;&nbsp;</span><span><span id="windSpeed">2</span>mph</span></div>
                 </div>
@@ -75,38 +76,38 @@
             <div class="days label" id="day3"></div>
             <div class="days label" id="day4"></div>
             <div class="days label" id="day5"></div>
-            <div class="days"><img id="icon1" ><span id="temp1"></span>&deg;F</div>
-            <div class="days"><img id="icon2" ><span id="temp2"></span>&deg;F</div>
-            <div class="days"><img id="icon3" ><span id="temp3"></span>&deg;F</div>
-            <div class="days"><img id="icon4" ><span id="temp4"></span>&deg;F</div>
-            <div class="days"><img id="icon5" ><span id="temp5"></span>&deg;F</div>
+            <div class="days"><img id="icon1"><span id="temp1"></span>&deg;F</div>
+            <div class="days"><img id="icon2"><span id="temp2"></span>&deg;F</div>
+            <div class="days"><img id="icon3"><span id="temp3"></span>&deg;F</div>
+            <div class="days"><img id="icon4"><span id="temp4"></span>&deg;F</div>
+            <div class="days"><img id="icon5"><span id="temp5"></span>&deg;F</div>
         </div>
-    
-            <div class="events"></div>
+
+        <div class="events">
+            <h2>Preston Events</h2>
+            <hr>
+        </div>
 
         <div class="article">
-            <h2>An Article of Weather</h2>
+            <h2>Another Spring of Flood Concerns Looming for Midwest</h2>
             <img src="images/preston/photo-of-green-field-near-mountains-974314.jpg" alt="picture of farm land">
-            <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
-                and I will give you a complete account of the system, and expound the actual teachings of the great
-                explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids
-                pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure
-                rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or
-                pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances
-                occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us
-                ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any
-                right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one
-                who avoids a pain that produces no resultant pleasure?"</p>
-            <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
-                demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the
-                pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty
-                through weakness of will, which is the same as saying through shrinking from toil and pain. These cases
-                are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled
-                and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and
-                every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of
-                business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise
-                man therefore always holds in these matters to this principle of selection: he rejects pleasures to
-                secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+            <p>Spring flooding may not be as widespread and severe in 2020 as it was in 2019, but large areas of the
+                U.S. are still at risk, according to the spring flood outlook released by NOAA on Thursday. Areas
+                stretching from the eastern Great Plains to the Appalachians and the Southeast U.S. coast—spanning parts
+                of 23 states—have a better-than-even chance of moderate to major flooding this spring, according to
+                NOAA.</p>
+            <p>The corridor from the eastern Dakotas to western Minnesota, still dealing with the hangover of heavy
+                rains and snows since 2018, has the highest odds of serious flooding. The outlook called for a
+                greater-than-50% chance of major flooding in the Red River Valley of the North, which separates North
+                Dakota and Minnesota, and in the James River Valley of eastern South Dakota.</p>
+            <p>Major flooding is also likely along parts of the Mississippi Valley in far northwest Illinois and
+                southeast Iowa.</p>
+            <p>Persistently high soil moisture is a key driver of the enhanced flood threat. Large parts of the Upper
+                Midwest and Northern Plains have slogged their way through almost two years of above-average
+                precipitation, including long spans of record- or near-record moisture.</p>
+            <p>Read the full article <a
+                    href="https://www.wunderground.com/cat6/another-spring-of-flood-concerns-looming-for-midwest">Another
+                    Spring of Flood Concerns Looming for Midwest</a></p>
         </div>
 
         <div class="contact">
@@ -133,8 +134,8 @@
     <script src="js/pancake.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfont.js"></script>
-   <!-- <script src="js/webapi.js"></script>
-    <script src="js/fiveDayForecast.js"></script> -->
+    <script src="js/webapi.js"></script>
+    <script src="js/fiveDayForecast.js"></script>
     <script src="js/eventsPreston.js"></script>
-    
+
 </body>

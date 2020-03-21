@@ -13,9 +13,6 @@
 </head>
 
 <body>
-    <div id="pancake">
-        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
-    </div>
 
     <header>
         <picture>
@@ -43,30 +40,25 @@
     </nav>
 
     <main>
+
         <h2>Soda Springs Idaho</h2>
         <div class="hero">
             <picture id="heroimg">
                 <source media="(min-width: 851px)" srcset="images/sodasprings/Large.jpg">
-                <source media="(min-width: 376px) and (max-width: 850px)" srcset="images/preston/medium.jpg">
+                <source media="(min-width: 376px) and (max-width: 850px)" srcset="images/sodasprings/medium.jpg">
                 <source media="(max-width: 375px)" srcset="images/sodasprings/small.jpg">
                 <img src="images/sodasprings/small.jpg" alt="the small picture">
             </picture>
             <section class="weather-summary">
                 <h2>Weather Summary</h2>
                 <hr>
-                <div class="sum-left">
-                    <div>Currently:&nbsp;&nbsp;</div>
-                    <div>Tempurature:&nbsp;&nbsp;</div>
-                    <div>Wind Chill:&nbsp;&nbsp;</div>
-                    <div>Humidity:&nbsp;&nbsp;</div>
-                    <div>Wind Speed:&nbsp;&nbsp;</div>
-                </div>
-                <div class="sum-right">
-                    <div><span id="condition"></span></div>
-                    <div><span id="temp"></span>&#8457;</div>
-                    <div><span id="windChill"></span>&#8457;</div>
-                    <p><span id=humidity>20</span>%</p>
-                    <p><span id="windSpeed">2</span>mph</p>
+                <div id="sum">
+                    <div><span>Currently:&nbsp;&nbsp;</span><span><img id="condition"></img></span></div>
+                    <div><span>Tempurature:&nbsp;&nbsp;</span><span><span id="temp"></span>&#8457;</span></div>
+                    <div><span>Wind Chill:&nbsp;&nbsp;</span><span><span id="windChill"></span>&#8457;</span></span>
+                    </div>
+                    <div><span>Humidity:&nbsp;&nbsp;</span><span><span id=humidity>20</span>%</span></div>
+                    <div><span>Wind Speed:&nbsp;&nbsp;</span><span><span id="windSpeed">2</span>mph</span></div>
                 </div>
             </section>
 
@@ -79,41 +71,39 @@
             <div class="days label" id="day3"></div>
             <div class="days label" id="day4"></div>
             <div class="days label" id="day5"></div>
-            <div class="days"><img id="icon1" ><span id="temp1"></span>&deg;F</div>
-            <div class="days"><img id="icon2" ><span id="temp2"></span>&deg;F</div>
-            <div class="days"><img id="icon3" ><span id="temp3"></span>&deg;F</div>
-            <div class="days"><img id="icon4" ><span id="temp4"></span>&deg;F</div>
-            <div class="days"><img id="icon5" ><span id="temp5"></span>&deg;F</div>
+            <div class="days"><img id="icon1"><span id="temp1"></span>&deg;F</div>
+            <div class="days"><img id="icon2"><span id="temp2"></span>&deg;F</div>
+            <div class="days"><img id="icon3"><span id="temp3"></span>&deg;F</div>
+            <div class="days"><img id="icon4"><span id="temp4"></span>&deg;F</div>
+            <div class="days"><img id="icon5"><span id="temp5"></span>&deg;F</div>
+        </div>
+
+        <div class="events">
+            <h2>Soda Springs Events</h2>
+            <hr>
         </div>
 
         <div class="article">
-            <h2>An Article of Weather</h2>
-            <img src="images/sodasprings/photo-of-green-field-near-mountains-974314.jpg" alt="picture of farm land">
-            <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
-                and I will give you a complete account of the system, and expound the actual teachings of the great
-                explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids
-                pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure
-                rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or
-                pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances
-                occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us
-                ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any
-                right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one
-                who avoids a pain that produces no resultant pleasure?"</p>
-            <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
-                demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the
-                pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty
-                through weakness of will, which is the same as saying through shrinking from toil and pain. These cases
-                are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled
-                and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and
-                every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of
-                business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise
-                man therefore always holds in these matters to this principle of selection: he rejects pleasures to
-                secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
-
+            <h2>Second Warmest February on Record Globally</h2>
+            <img src="images/sodasprings/sodaspringsphoto.jpg" alt="A photo of the sky near soda springs">
+            <p>Research groups across the world concur that this past northern winter (December-February) was the
+                second-warmest on record globally, in records going back more than a century. The latest group to
+                confirm this finding is NOAA, in its monthly State of the Climate report issued Friday.</p>
+            <p>The winter result was a product of the second-warmest December, warmest January, and second-warmest
+                February in the NOAA analysis, which extends back to 1880. For those three months combined, the global
+                temperature was 1.12°C (2.02°F) above the 20th-century average. This reading is just 0.06°C (0.1°F)
+                behind the record set in 2015-16.</p>
+            <p>The global warmth of the past few months is especially striking given the lack of an El Niño event, which
+                raises global air temperatures by releasing heat stored in the tropical Pacific Ocean.</p>
+            <p>Global temperatures in the record-warm winter of 2015-16 were boosted by very strong El Niño conditions.
+                In contrast, there was no El Niño event this past winter, although temperatures in the central tropical
+                Pacific were unusually warm.</p>
+            <p>Read the full article <a
+                    href="https://www.wunderground.com/cat6/second-warmest-february-on-record-globally">Second Warmest February on Record Globally</a></p>
         </div>
 
         <div class="contact">
-            <img class="map" src="images/sodasprings/preston_map.jpg" alt="Map of Preston">
+            <img class="map" src="images/preston/preston_map.jpg" alt="Map of Preston">
             <div class="contact-info">
                 <p>Email <a>epixweather@epixweather.com</a></p>
                 <p>Phone <a>208-222-2222</a></p>
@@ -130,13 +120,12 @@
         <br /> Last Updated: <span id="lastUpdated"></span>
 
     </footer>
-
     <script src="js/windChill.js"></script>
     <script src="js/date.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/pancake.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfont.js"></script>
-    <script src="js/sodawebapi.js"></script>
-    <script src="js/sodafiveDayForecast.js"></script>
+    <script src="js/webapiSoda.js"></script>
+    <script src="js/fiveDayForecastSoda.js"></script>
+    <script src="js/eventsSodasprings.js"></script>
 </body>

@@ -104,13 +104,50 @@
         margin-bottom: 15px;
     }
 
-    .weather-summary {
-        height: 200px;
+    #condition {
+        padding: 0px;
+        margin: 0px;
+        width: 25px;
+        height: 25px;
     }
-
-    .weather-summary p {
-        margin: 12px;
-        margin-left: 0px;
-        margin-right: 0px;
+    
+    .weather-summary div span {
+        vertical-align: middle;
+        padding: 2px;
+        font-size: 15px;
+        color: orange;
+    }
+    
+    #sum {
+        margin-top: 0px;
+    }
+    
+    .weather-summary h2 {
+        font-size: 30px;
+    }
+    
+    .weather-summary div {
+        margin-top: 5px;
+    }
+    
+    .weather-summary {
+        max-width: 55%;
+        position: absolute;
+        top: 15px;
+        opacity: 0.85;
+        box-shadow: none;
+        background-color:rgba(34, 116, 165, 0.9);
+        text-decoration-color: black;
+        border: 1px solid #000;
+        display: grid;
+        text-align: center;
+        line-height: auto;
+        padding-bottom: 1px;
+        height: 240px;
+    } 
+    
+    .weather-summary hr {
+        width: 100%;
+        margin: 0px;
     }
 }

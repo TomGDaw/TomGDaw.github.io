@@ -1,91 +1,26 @@
-const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=bf5e09b877b758307bcc8dd3989a14e6';
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=bf5e09b877b758307bcc8dd3989a14e6';
 var now = new Date();
 var dayOfWeek = now.getDay();
 
 fetch(apiURL)
-  .then((response) => response.json())
-  .then((jsObject) => {
-    console.log(jsObject);
-    const currentCondition = document.querySelector('#condition');
-    const currentTemp = document.querySelector('#temp');
-    const currentHumidity = document.querySelector('#humidity');
-    const currentWindspeed = document.querySelector('#windspeed');
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+        const currentCondition = document.querySelector('#condition');
+        const currentTemp = document.querySelector('#temp');
+        const currentHumidity = document.querySelector('#humidity');
+        const currentWindspeed = document.querySelector('#windSpeed');
 
-    currentCondition.textContent = jsObject.list[0].weather[0].main;
-    console.log(currentCondition);
-    currentTemp.textContent = Math.round(jsObject.list[0].main.temp);
-    currentHumidity.textContent = Math.round(jsObject.list[0].main.humidity);
-    currentWindspeed.textContent = Math.round(jsObject.list[0].wind.speed);
+        var imagesrc = 'https://openweathermap.org/img/wn/' + jsObject.weather[0].icon + '@2x.png';
+        var desc = jsObject.weather[0].description;
 
-    const temp = jsObject.list[0].main.temp;
-    const windspeed = jsObject.list[0].wind.speed;
-    console.log(temp);
-    console.log(windspeed);
+        currentCondition.setAttribute('src', imagesrc);
+        currentCondition.setAttribute('alt', desc);
 
-    const fivedayforecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-    console.log(fivedayforecast);
+        console.log(currentCondition);
+        currentTemp.textContent = Math.round(jsObject.main.temp);
+        currentHumidity.textContent = (jsObject.main.humidity);
+        currentWindspeed.textContent = (jsObject.wind.speed);
 
-    for(let i=0; i<fivedayforecast.length; i++) {
-        document.getElementById('forecast'+(i+1)).textContent = Math.round(fivedayforecast[i].main.temp);
-
-        const imagesrc = 'https://openweathermap.org/img/w/' + fivedayforecast[i].weather[0].icon + '.png';
-        console.log(imagesrc);
-        const desc = fivedayforecast[i].weather[0].description;
-        document.getElementById('conditionico'+(i+1)).setAttribute('src', imagesrc);
-        document.getElementById('conditionico'+(i+1)).setAttribute('alt', desc);
-    }
-    
-    switch(dayOfWeek) {
-
-        case 0:
-            document.getElementById('day1').textContent = "Mon";
-            document.getElementById('day2').textContent = "Tue";
-            document.getElementById('day3').textContent = "Wed";
-            document.getElementById('day4').textContent = "Thur";
-            document.getElementById('day5').textContent = "Fri";
-            break;
-
-        case 1:
-            document.getElementById('day1').textContent = "Tue";
-            document.getElementById('day2').textContent = "Wed";
-            document.getElementById('day3').textContent = "Thur";
-            document.getElementById('day4').textContent = "Fri";
-            document.getElementById('day5').textContent = "Sat";
-            break;
-        case 2:
-            document.getElementById('day1').textContent = "Wed";
-            document.getElementById('day2').textContent = "Thur";
-            document.getElementById('day3').textContent = "Fri";
-            document.getElementById('day4').textContent = "Sat";
-            document.getElementById('day5').textContent = "Sun";
-            break;
-        case 3:
-            document.getElementById('day1').textContent = "Thur";
-            document.getElementById('day2').textContent = "Fri";
-            document.getElementById('day3').textContent = "Sat";
-            document.getElementById('day4').textContent = "Sun";
-            document.getElementById('day5').textContent = "Mon";
-            break;
-        case 4:
-            document.getElementById('day1').textContent = "Fri";
-            document.getElementById('day2').textContent = "Sat";
-            document.getElementById('day3').textContent = "Sun";
-            document.getElementById('day4').textContent = "Mon";
-            document.getElementById('day5').textContent = "Tue";
-            break;
-        case 5:
-            document.getElementById('day1').textContent = "Sat";
-            document.getElementById('day2').textContent = "Sun";
-            document.getElementById('day3').textContent = "Mon";
-            document.getElementById('day4').textContent = "Tue";
-            document.getElementById('day5').textContent = "Wed";
-            break;
-        case 6:
-            document.getElementById('day1').textContent = "Sun";
-            document.getElementById('day2').textContent = "Mon";
-            document.getElementById('day3').textContent = "Tue";
-            document.getElementById('day4').textContent = "Wed";
-            document.getElementById('day5').textContent = "Thur";
-            break;  
-    }
-});
+        windChill();
+    });
