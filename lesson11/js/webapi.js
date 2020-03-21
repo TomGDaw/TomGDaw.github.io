@@ -22,14 +22,6 @@ fetch(apiURL)
     console.log(temp);
     console.log(windspeed);
 
-    if (temp <= 50 && windspeed >= 3) {
-        const windchill = (35.74 + (0.6215 * temp) - (35.75 * Math.pow(windspeed, 0.16)) + (0.4275 * temp * Math.pow(windspeed, 0.16))).toFixed(2);
-        document.getElementById('windchill').textContent = Math.round(windchill);
-    } else {
-        const windchill = ('N/A');
-        document.getElementById('windchill').textContent = windchill;
-    }
-
     const fivedayforecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
     console.log(fivedayforecast);
 
@@ -44,6 +36,15 @@ fetch(apiURL)
     }
     
     switch(dayOfWeek) {
+
+        case 0:
+            document.getElementById('day1').textContent = "Mon";
+            document.getElementById('day2').textContent = "Tue";
+            document.getElementById('day3').textContent = "Wed";
+            document.getElementById('day4').textContent = "Thur";
+            document.getElementById('day5').textContent = "Fri";
+            break;
+
         case 1:
             document.getElementById('day1').textContent = "Tue";
             document.getElementById('day2').textContent = "Wed";
@@ -86,12 +87,5 @@ fetch(apiURL)
             document.getElementById('day4').textContent = "Wed";
             document.getElementById('day5').textContent = "Thur";
             break;  
-        case 7:
-            document.getElementById('day1').textContent = "Mon";
-            document.getElementById('day2').textContent = "Tue";
-            document.getElementById('day3').textContent = "Wed";
-            document.getElementById('day4').textContent = "Thur";
-            document.getElementById('day5').textContent = "Fri";
-            break;
     }
 });

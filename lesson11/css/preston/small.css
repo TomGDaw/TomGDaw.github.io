@@ -224,7 +224,7 @@ main section {
     background-color: #b2c7f5;
 }
 
-#events {
+.events {
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 30px;

@@ -1,4 +1,4 @@
-
+/*
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 fetch(requestURL)
   .then(function (response) {
@@ -28,13 +28,15 @@ fetch(requestURL)
         let event3 = document.createElement('p');
         event3.textContent = towns[i].events[2];
         events.appendChild(event3);
+
       } else {
         continue;
       }
     }
   });
+*/
 
-  /* const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL)
   .then(function (response) {
@@ -48,11 +50,12 @@ fetch(requestURL)
 
           for (let j = 0; j = towns[i].events; j++) 
           {
-            let p = document.createElement('p');
-            p.textContent = towns[i].events[j];
-            document.querySelector('div.events').appendChild(p);
+            let card = document.createElement('p');
+            card.textContent = towns[i].events[j];
+            document.querySelector('div.events').appendChild(card);
           }
+          break;
         }
       }
   });
-  */
+
