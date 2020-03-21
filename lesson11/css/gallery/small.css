@@ -135,7 +135,7 @@ main {
 }
 
 img {
-    height: 300px;
+    height: auto;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -148,6 +148,7 @@ img {
 main {
     max-width: 100%;
     display: grid;
+    grid-gap: 15px;
     grid-template-columns: 1fr;
     font-size: 0.8rem;
     background-color: seashell;
@@ -158,6 +159,6 @@ main {
 }
 
 .gallery {
-    width: 400px;
+    width: 100%;
     height: auto;
 }

@@ -10,6 +10,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 header img {
@@ -135,7 +136,8 @@ main {
 }
 
 img {
-    height: 300px;
+    max-height: 300px;
+    max-width: auto;
     margin-top: 10px;
     margin-bottom: 10px;
     border-style: outset;
@@ -159,4 +161,16 @@ img {
     display: flex;
     flex-direction: column;
     margin: auto;
+}
+
+.hero {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.homePic {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 50px;
 }
