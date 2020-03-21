@@ -101,6 +101,7 @@ footer {
     font-size: 22px;
 }
 
+
 /* iPhoneX views */
 header,
 nav,
@@ -114,6 +115,7 @@ footer {
 main {
     font-size: 0.8rem;
     background-color: seashell;
+    max-width: 850px;
 }
 
 .responsive li {
@@ -167,10 +169,22 @@ img {
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: column;
 }
 
 .homePic {
     max-width: 100%;
     height: auto;
     margin-bottom: 50px;
+    border: 2px black solid;
+    box-shadow: 2px 2px 2px #734b5e;
+}
+
+.heroHome {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 30px;
+    border: 2px black solid;
+    box-shadow: 2px 2px 2px #734b5e;
+    background-color: #eff4ff;
 }

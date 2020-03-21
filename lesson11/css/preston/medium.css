@@ -85,6 +85,7 @@
     .map {
         display: block;
         max-width: 350px;
+        border-right: 2px black solid;
     }
 
     .article p {

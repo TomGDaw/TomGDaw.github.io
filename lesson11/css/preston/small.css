@@ -10,6 +10,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 header img {
@@ -137,6 +138,8 @@ footer {
     position: relative;
     margin: 10px auto;
     display: grid;
+    border: 2px black solid;
+    box-shadow: 2px 2px 2px #734b5e;
 }
 
 .navigation a:hover {
@@ -213,4 +216,10 @@ main section {
 
 #pancake {
     display: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 30px;
+    border: 2px black solid;
+    box-shadow: 2px 2px 2px #734b5e;
+    background-color: #b2c7f5;
 }
