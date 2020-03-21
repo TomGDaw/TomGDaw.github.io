@@ -256,7 +256,6 @@ main section {
 	border: 1px solid #000;
     display: grid;
     text-align: center;
-    line-height: auto;
     padding-bottom: 1px;
     height: 160px;
 } 
