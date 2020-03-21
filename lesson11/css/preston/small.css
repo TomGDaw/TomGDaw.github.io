@@ -223,3 +223,12 @@ main section {
     box-shadow: 2px 2px 2px #734b5e;
     background-color: #b2c7f5;
 }
+
+#events {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 30px;
+    border: 2px black solid;
+    box-shadow: 2px 2px 2px #734b5e;
+    background-color: #b2c7f5;
+}
