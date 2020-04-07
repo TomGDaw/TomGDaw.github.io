@@ -1,0 +1,26 @@
+@media only screen and (min-width: 37.5em) {
+    header h1 {
+      font-size: xx-large;  
+    }
+
+    .weather {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* nav */
+
+    ul {
+        flex-direction: row;
+    }
+
+    ul li {
+        text-align: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+    }
+}

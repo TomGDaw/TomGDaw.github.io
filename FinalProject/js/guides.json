@@ -1,0 +1,21 @@
+{
+  "guides": [{
+      "name": "Thomas Daw",
+      "photo": "rafting.jpg",
+      "motto": "CIT230 shouldn't be a required class for CIT majors.",
+      "about": "Thomas loves being in the water and swiming is one of his favorite things. He has learned that latley he hates web design and has chosen to live as a rafting guide and give up all hope of doing anything with computers because he never wants to touch HTML, CSS or JAVA Script again."
+    },
+    {
+      "name": "Abby Smith",
+      "photo": "abby.jpg",
+      "motto": "Hike the Rivers in your Life.",
+      "about": "Abby is a talented river trail hiker. Abby loves to help familes and people have fun on the trails."
+    },
+    {
+      "name": "Dave Newton",
+      "photo": "dave.jpg",
+      "motto": "Give a man a fish and feed him for a day, teach a man to catch a fish and take away all of his other hobbies",
+      "about": "Dave loves fishing and is living his dream teaching people how to fish."
+    }
+  ]
+}

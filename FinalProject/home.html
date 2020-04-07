@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Salmon River Adventures</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <LINK href="css/small.css" rel="stylesheet" type="text/css">
+    <LINK href="css/medium.css" rel="stylesheet" type="text/css">
+    <LINK href="css/large.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <picture>
+            <img class="river" src="images/river.jpg" alt="rolling river picture">
+        </picture>
+        <h1>Salmon River Adventures</h1>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a id="active" href="home.html">Home</a></li>
+            <li><a href="riverguide.html">River Guides</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="call">
+            <h2>About Salmon River Adventures</h2>
+            <p>The Salmon River Adventures river rafting tour company is located in Riggins, Idaho and offers
+                world-class, whitewater rafting experiences on the Salmon River in the middle of an Idaho wilderness.
+                The owner-operated company offers day and overnight trips for groups and individuals using
+                state-of-the-art equipment and complies with all U.S. Forest Service regulations. Salmon River's core
+                business values are of high-end adventures, professional and experienced service, safety, and fun.</p>
+        </section>
+        <section class="weather">
+            <div class="weather-summary">
+                <h2>Weather Summary</h2>
+                <hr>
+                <div id="sum">
+                    <div><span>Currently:&nbsp;&nbsp;</span><span><img id="condition"
+                                src="images/preston/phpThumb_generated_thumbnailico" alt="weathericon"></span></div>
+                    <div><span>Tempurature:&nbsp;&nbsp;</span><span><span id="temp"></span>&#8457;</span></div>
+                    <div><span>Wind Chill:&nbsp;&nbsp;</span><span><span id="windChill"></span>&#8457;</span>
+                    </div>
+                    <div><span>Humidity:&nbsp;&nbsp;</span><span><span id=humidity>20</span>%</span></div>
+                    <div><span>Wind Speed:&nbsp;&nbsp;</span><span><span id="windSpeed">2</span>mph</span></div>
+                </div>
+            </div>
+            <div class="forecast">
+                <h3>5 Day Forecast</h3>
+                <div class="days label" id="day1"></div>
+                <div class="days label" id="day2"></div>
+                <div class="days label" id="day3"></div>
+                <div class="days label" id="day4"></div>
+                <div class="days label" id="day5"></div>
+                <div class="days"><img id="icon1" src="images/preston/phpThumb_generated_thumbnailico"
+                        alt="weathericon"><span id="temp1"></span>&deg;F</div>
+                <div class="days"><img id="icon2" src="images/preston/phpThumb_generated_thumbnailico"
+                        alt="weathericon"><span id="temp2"></span>&deg;F</div>
+                <div class="days"><img id="icon3" src="images/preston/phpThumb_generated_thumbnailico"
+                        alt="weathericon"><span id="temp3"></span>&deg;F</div>
+                <div class="days"><img id="icon4" src="images/preston/phpThumb_generated_thumbnailico"
+                        alt="weathericon"><span id="temp4"></span>&deg;F</div>
+                <div class="days"><img id="icon5" src="images/preston/phpThumb_generated_thumbnailico"
+                        alt="weathericon"><span id="temp5"></span>&deg;F</div>
+            </div>
+        </section>
+        <div class="adventures">
+            <h2>River Adventures</h2>
+        </div>
+
+    </main>
+
+    <footer>
+        &copy; <span id="currentDate"></span> | Thomas Daw | Idaho | <a href="https://www.byui.edu/online"
+            id="byulink">BYUI
+            Online Learning</a>
+        <br /> Last Updated: <span id="lastUpdated"></span>
+
+    </footer>
+    <script src="js/adventures.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webapi.js"></script>
+    <script src="js/fiveDayForcast.js"></script>
+</body>

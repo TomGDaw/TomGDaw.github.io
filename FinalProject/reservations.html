@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Salmon River guides</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <LINK href="css/small.css" rel="stylesheet" type="text/css">
+    <LINK href="css/medium.css" rel="stylesheet" type="text/css">
+    <LINK href="css/large.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <picture>
+            <img class="river" src="images/river.jpg" alt="rolling river picture">
+        </picture>
+        <h1>Salmon River guides</h1>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="riverguide.html">River Guides</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a id="active" href="reservations.html">Reservations</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Adventure Form</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="option">Full Name* <input type="text" name="name" required pattern="[A-za-z].{4,}" title="Must be at least 5 characters"></label>
+                <label class="option">Email <input type="email" name="email" placeholder="someone@provider.com"></label>
+                <label class="option">Phone Number* <input type="tel" name="phone" required></label>
+                <label class="option">Number in group* <input type="number" name="group" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Adventure Selection</legend>
+                <label class="option">Travel Date <input type="date" name="travelDate" required></label>
+                    <label class="option">Adventure Selection
+                        <select name="adventure" required>
+                            <option value="">Select an Adventure</option>
+                            <option value="River Fishing">River Fishing</option>
+                            <option value="River Trail Hike">River Trail Hike</option>
+                            <option value="White Water River Rafting">White Water River Rafting</option>
+                        </select>
+                    </label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                    <label class="option">Please Type Any Additional Requests Or Information Here
+                        <textarea name="comments" rows="5" cols="50"></textarea></label>
+            </fieldset>
+
+            <input id="reportBtn" type="submit" value="Click for Adventure">
+        </form>
+    </main>
+
+    <footer>
+        &copy; <span id="currentDate"></span> | Thomas Daw | Idaho | <a href="https://www.byui.edu/online"
+            id="byulink">BYUI
+            Online Learning</a>
+        <br /> Last Updated: <span id="lastUpdated"></span>
+
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>

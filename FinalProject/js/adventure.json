@@ -1,0 +1,29 @@
+{
+    "adventures" : [
+    
+    {
+      "name": "River Fishing",
+      "photo": "fishing.jpg",
+      "motto": "Epic Fishing for the Epic Fisher",
+      "cost": "$12.59 Per Person",
+      "guide": "Ranger Dave Newton",
+      "danger": "Low"
+    },
+    {
+      "name": "River Trail Hiking",
+      "photo": "hiking.jpg",
+      "motto": "Epic Hike for the Epic Hiker",
+      "cost": "$15.99 Per Person",
+      "guide": "Ranger Abby Smith",
+      "danger": "Medium"
+    },
+    {
+      "name": "White Water River Rafting",
+      "photo": "rafting.jpg",
+      "motto": "Epic Rafting for the Epic Rafter",
+      "cost": "19.99 Per Person",
+      "guide": "Ranger Thomas Daw",
+      "danger": "Extreme"
+    }
+   ]
+  }
