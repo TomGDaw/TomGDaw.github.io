@@ -12,7 +12,6 @@ header h1 {
   border: 2px black solid;
   background-color: #a1d2ce;
   align-self: center;
-  max-height: auto;
   font-size: medium;
   padding: 1%;
   font-family: 'Audiowide', cursive;
@@ -129,7 +128,6 @@ main {
 
 .adventures img {
     max-width: 90%;
-    max-height: auto;
     margin-bottom: 10px ;
 }
 
@@ -162,7 +160,6 @@ main {
 
 .guides img {
     max-width: 90%;
-    max-height: auto;
     margin-bottom: 10px ;
 }
 
@@ -246,12 +243,16 @@ main {
     display: grid;
     text-align: center;
     padding-bottom: 1px;
-    max-height: auto;
 } 
 
 .weather-summary hr {
     width: 100%;
     margin: 0px;
+}
+
+.thankUPic {
+    max-width: 850px;
+    border: 3px #5497a7 solid;
 }
 
 /* Footer */
