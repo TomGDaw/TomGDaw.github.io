@@ -14,11 +14,11 @@ header {
 }
 
 header img {
-    width: 400px;
+    width: 95%;
     height: auto;
     border: 2px black solid;
     border-radius: 4px;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 10px 15px 20px black;
     background-color: #eff4ff;
 }
 
