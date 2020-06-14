@@ -176,6 +176,20 @@ main {
     font-family: 'Spicy Rice';
 }
 
+/* Formating for Koplaidr */
+
+.videos {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.vid {
+    height: 315px;
+    width: 95%;
+    margin: 2%;
+}
+
 /* Pictures and sections for Richard */
 
 .richardMain {
