@@ -9,7 +9,7 @@ fetch(requestURL)
     const dad = jsonObject['dad'];
     let rowNumber = 0;
     for (let i = 0; i < dad.length; i++) {
-      if (dad[i].name == 'Pie Town' || dad[i].name == "Dad at Lagoon") {
+      if (dad[i].name == 'Pie Town' || dad[i].name == "Dad at Lagoon" || dad[i].name == "dad1" || dad[i].name == "dad2" || dad[i].name == "dad3") {
 
         rowNumber = rowNumber + 1;
 

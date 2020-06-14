@@ -23,4 +23,14 @@
     .navigation li {
         display: block;
     }
+
+    .richardMain {
+        width: 60%;
+        height: auto;
+    }
+
+    .robertMain {
+        width: 60%;
+        height: auto;
+    }
 }

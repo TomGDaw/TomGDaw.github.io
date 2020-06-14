@@ -33,7 +33,6 @@ h2 {
 
 p {
     font-family: 'Gayathri', sans-serif;
-    text-align: center;
 }
 
 nav {
@@ -130,7 +129,7 @@ main {
     display: block;
 }
 
-/* Pictures and sections */
+/* Pictures and sections for home */
 
 .dad img {
     max-width: 90%;
@@ -160,4 +159,46 @@ main {
 .row2 {
     background-color: #1966BD;
     font-family: 'Spicy Rice';
+}
+
+.row3 {
+    background-color: #1966BD;
+    font-family: 'Spicy Rice';
+}
+
+.row4 {
+    background-color: #1966BD;
+    font-family: 'Spicy Rice';
+}
+
+.row5 {
+    background-color: #1966BD;
+    font-family: 'Spicy Rice';
+}
+
+/* Pictures and sections for Richard */
+
+.richardMain {
+    width: 95%;
+    height: auto;
+}
+
+.richardNote {
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px black;
+    text-align: left;
+    text-indent: 5%;
+    padding: 15px;
+    margin: 10px;
+    max-width: 850px;
+    font-size: 20px;
+}
+
+/* Pictures and sections for Robert */
+
+.robertMain {
+    width: 95%;
+    height: auto;
 }
