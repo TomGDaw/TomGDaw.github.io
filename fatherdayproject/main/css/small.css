@@ -177,6 +177,15 @@ main {
     font-family: 'Spicy Rice';
 }
 
+.family1 {
+    border: 2px black solid;
+    box-shadow: 15px 15px 15px black;
+    text-indent: 5%;
+    max-width: 95%;
+    font-size: 20px;
+    margin: 5px; 
+}
+
 /* Formating for Koplaidr */
 
 .videos {
@@ -245,3 +254,77 @@ main {
     max-width: 95%;
     font-size: 20px; 
 }
+
+/* Pictures and sections for Christopher */
+
+.christopherMain {
+    width: 95%;
+    height: auto;
+}
+
+.christopherNote {
+    background-color: #BE2419;
+    border: 2px black solid;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px black;
+    max-width: 850px;
+    font-size: 20px;
+}
+
+.christopher1 {
+    border: 2px black solid;
+    box-shadow: 15px 15px 15px black;
+    text-indent: 5%;
+    max-width: 95%;
+    font-size: 20px;
+    margin: 5px; 
+}
+
+/* Pictures and sections for rodger */
+
+.rodgerMain {
+    width: 95%;
+    height: auto;
+}
+
+.rodgerNote {
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px black;
+    text-align: left;
+    text-indent: 5%;
+    padding: 15px;
+    margin: 10px;
+    max-width: 850px;
+    font-size: 20px;
+}
+
+/* Pictures and sections for sandy */
+
+.sandyMain {
+    width: 95%;
+    height: auto;
+}
+
+.sandyNote {
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px black;
+    text-align: left;
+    text-indent: 5%;
+    padding: 15px;
+    margin: 10px;
+    max-width: 850px;
+    font-size: 20px;
+}
+
+.sandy1 {
+    border: 2px black solid;
+    box-shadow: 10px 10px 10px black;
+    text-indent: 5%;
+    max-width: 95%;
+    font-size: 20px; 
+}
+
