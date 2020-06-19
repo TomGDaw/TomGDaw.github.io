@@ -111,6 +111,10 @@ main {
     max-width: 850px;
 }
 
+footer {
+    margin-top: 15px;
+}
+
 .responsive li {
 	display: block;
 }
@@ -184,6 +188,46 @@ main {
     max-width: 95%;
     font-size: 20px;
     margin: 5px; 
+}
+
+/* Pictures and sections for Christopher */
+
+.momMain {
+    width: 95%;
+    height: auto;
+}
+
+.momNote {
+    background-color: #1966BD;
+    border: 2px black solid;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px black;
+    max-width: 850px;
+    font-size: 20px;
+}
+
+.mom {
+    border: 2px black solid;
+    box-shadow: 15px 15px 15px black;
+    max-width: 95%;
+    font-size: 20px;
+    margin: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.mom1 {
+    border: 2px black solid;
+    box-shadow: 15px 15px 15px black;
+    max-width: 95%;
+    font-size: 20px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Formating for Koplaidr */
@@ -277,7 +321,7 @@ main {
     text-indent: 5%;
     max-width: 95%;
     font-size: 20px;
-    margin: 5px; 
+    margin: 5px;
 }
 
 /* Pictures and sections for rodger */

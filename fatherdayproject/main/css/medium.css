@@ -24,6 +24,11 @@
         display: block;
     }
 
+    .momMain {
+        width: 60%;
+        height: auto;
+    }
+
     .richardMain {
         width: 60%;
         height: auto;
