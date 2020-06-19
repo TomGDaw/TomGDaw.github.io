@@ -311,6 +311,34 @@ footer {
     font-size: 20px; 
 }
 
+/* Pictures and sections for Amy */
+
+.thomasMain {
+    width: 95%;
+    height: auto;
+}
+
+.thomasNote {
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px black;
+    text-align: left;
+    text-indent: 5%;
+    padding: 15px;
+    margin: 10px;
+    max-width: 850px;
+    font-size: 20px;
+}
+
+.tom1 {
+    border: 2px black solid;
+    box-shadow: 10px 10px 10px black;
+    text-indent: 5%;
+    max-width: 95%;
+    font-size: 20px; 
+}
+
 /* Pictures and sections for Christopher */
 
 .christopherMain {
