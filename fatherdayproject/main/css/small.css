@@ -273,6 +273,16 @@ footer {
     height: auto;
 }
 
+.robert1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px black solid;
+    box-shadow: 10px 10px 10px black;
+    max-width: 80%;
+    font-size: 20px; 
+}
+
 /* Pictures and sections for Amy */
 
 .amyMain {
